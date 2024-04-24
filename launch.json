@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Robot Framework",
+            "type": "python",
+            "request": "launch",
+            "program": "${class_moshellcommand.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--listener",
+                "DebugLibrary"
+            ],
+            "cwd": "${.}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/path/to/python"
+            }
+        }
+    ]
+}
